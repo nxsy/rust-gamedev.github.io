@@ -18,7 +18,7 @@ Rust is a systems lang…">
     <link rel="canonical" href="https:&#x2F;&#x2F;gamedev.rs&#x2F;news&#x2F;030&#x2F;">
 
     
-        <meta property="article:published_time" content="2022-02-08T00:00:00+00:00">
+        <meta property="article:published_time" content="2022-02-10T00:00:00+00:00">
     
 
 
@@ -58,9 +58,9 @@ Rust is a systems lang…">
             <h1 class="post-title p-name" itemprop="name headline">This Month in Rust GameDev #30 - January 2022</h1>
             <p class="post-meta">
                 
-                    <time class="dt-published" datetime="2022-02-08T00:00:00+00:00" itemprop="datePublished">
+                    <time class="dt-published" datetime="2022-02-10T00:00:00+00:00" itemprop="datePublished">
                         
-                        2022-02-08
+                        2022-02-10
                     </time>
                 
                 
@@ -144,12 +144,12 @@ include:</p>
 <p><a href="https://vange.rs">Rusty Vangers</a> by <a href="https://github.com/kvark/">@kvark</a> is a modern re-implementation of the original
 <a href="https://www.gog.com/en/game/vangers">Vangers</a> game from the last century.
 It's in Rust, and uses GPU and multiple threads heavily.</p>
-<p>Something incredible has been brewing within the small by dedicated community
+<p>Something incredible has been brewing within the small but dedicated community
 of the original game. They prototyped a pluggable rendering interface in order
 to support rendering the game via <a href="https://vange.rs">Rusty Vangers</a> instead of the default
 CPU-based rasterizer. The plugin is made as a static library sub-crate with a
 bunch of C-exported functions.
-Basic concept worked on the terrain, and the mini working group transitioned
+The approach worked for the terrain, so the mini working group transitioned
 to moving more visual features off the old path and into the Rust-based plugin.</p>
 <p>At the same time, <a href="https://vange.rs">Rusty Vangers</a> engine got a number of important
 fixes and additions:</p>
@@ -169,7 +169,7 @@ engine. It has a demo available <a href="https://store.steampowered.com/app/1110
 <p>Latest developments:</p>
 <ul>
 <li><a href="https://www.anthropicstudios.com/2022/01/13/asking-windows-nicely/">Making Your Game Go Fast by Asking Windows Nicely</a> was published,
-discussing Windows specific performance tweaks in Way of Rhea's engine</li>
+discussing Windows-specific performance tweaks in Way of Rhea's engine</li>
 <li>Work started on the Snowcrab + Teleporter puzzles, completing nearly all the
 puzzles in the main game</li>
 <li>Work began on art for The Professor (pictured left), Shrew, and Hermes</li>
@@ -209,7 +209,7 @@ another example to look into when they begin their journey with the engine.</p>
 <p><a href="https://veloren.net">Veloren</a> is an open world, open-source voxel RPG inspired by Dwarf
 Fortress and Cube World.</p>
 <p>In January, another <a href="%5Bveloren-reading-club-4%5D">Veloren Reading Club was
-recorded</a>!. The <code>entity_sync</code> system was refactored to
+recorded</a>! The <code>entity_sync</code> system was refactored to
 be parallel. This was the largest bottleneck during the last release party, and
 this fix will allow us to more easily surpass the 200 player mark on the server.
 Work has been done to improve dagger animations. Sounds for flowing rivers are
@@ -218,7 +218,7 @@ with WGPU for Veloren, as the project transitioned to Vulkan, but wants to keep
 backward compatibility for older GPUs.</p>
 <p>Skiing and ice skating have gotten to a playable state. The mounts system was
 overhauled to make it more ergonomic to work with, you can <a href="https://www.youtube.com/watch?v=fJpeOJT78TI">watch a video of
-that here</a>. Several shaders experimental shaders have been
+that here</a>. Several experimental shaders have been
 added, along with a &quot;point glow&quot; which help lanterns look better. With these new
 shaders, swimming underwater is a whole new experience! A tracking issue was
 created for worldgen issues that will help coordinate direction for some large
@@ -283,26 +283,28 @@ Harvest Hero.</p>
 (<a href="https://store.steampowered.com/app/1448820/Hydrofoil_Generation/">Steam</a>, <a href="https://www.facebook.com/HydrofoilGenerationSailing/">Facebook</a>, <a href="https://discord.gg/DtKgt2duAy/">Discord</a>)
 is a realistic sailing/foiling inshore simulator in development for PC/Steam
 that will put you in the driving seat of modern competitive sailing.</p>
-<p>Last couple of months saw great disappointment for the failed port to WGPU
-due to unexpected performance losses compared to the old renderer.
-The game is now back to its original DirectX 11 renderer.</p>
-<p>February will see the beginning of the private alpha testing program, exciting
-opportunity to gather the first feedbacks about boat handling and controls
-before diving in one of the most challeging task of the game: sailing rules
-implementation.</p>
-<p>Content-wise, Hong Kong will soon join Den Haag as race location while the race
-course is getting more and more alive with addition of spectators boats.
-The playable foiling catamaran Jx50 is also constantly getting graphical
+<p>The last couple of months saw great disappointment for the failed port to WGPU
+due to unexpected performance losses compared to the old renderer. The game is
+now back to its original DirectX 11 renderer.</p>
+<p>February will see the beginning of the private alpha testing program, an
+exciting opportunity to gather the first feedback about boat handling and
+controls before diving into one of the most challenging tasks of the game:
+sailing rules implementation.</p>
+<p>Content-wise, Hong Kong will soon join Den Haag as a race location while the
+racecourse is becoming more and more alive with the addition of spectators
+boats. The playable foiling catamaran Jx50 is also constantly getting graphical
 updates and physics tweaks.</p>
-<p>Hydrofoil Generation is scheduled to release on Steam Early Access in
-Summer 2022.</p>
+<p>Hydrofoil Generation is scheduled to release on Steam Early Access in Summer</p>
+<ol start="2022">
+<li></li>
+</ol>
 <h3 id="country-slice">Country Slice&nbsp;<a class="anchor" href="#country-slice" aria-hidden="true">#</a>
 </h3>
 <p><img src="country_slice_7_delete_brush.gif" alt="country_slice" /></p>
 <p><a href="https://github.com/anopara/country-slice">Country Slice</a> is
 <a href="https://twitter.com/anastasiaopara/">@anastasiaopara</a>'s hobby project, where users can draw a
 small procedurally assembled scene.</p>
-<p>Newest addition is an erase brush and an ability to continue existing walls.</p>
+<p>The newest addition is an erase brush and an ability to continue existing walls.</p>
 <p><a href="https://twitter.com/anastasiaopara/">@anastasiaopara</a> also shared <a href="https://twitter.com/anastasiaopara/status/1477570256180817924">a Twitter thread</a>
 about doing procedural generation in Houdini vs Rust &amp; OpenGL.</p>
 <h2 id="engine-updates">Engine Updates&nbsp;<a class="anchor" href="#engine-updates" aria-hidden="true">#</a>
@@ -311,22 +313,22 @@ about doing procedural generation in Houdini vs Rust &amp; OpenGL.</p>
 </h3>
 <p>godot-rust (<a href="https://github.com/godot-rust/godot-rust">GitHub</a>, <a href="https://discord.com/invite/FNudpBD">Discord</a>, <a href="https://twitter.com/GodotRust">Twitter</a>)
 is a Rust library that provides bindings for the Godot game engine.</p>
-<p>The start of 2022 is a good opportunity to showcase a few godot-rust games
-in development. More info is available in <a href="https://godot-rust.github.io/book/projects/games.html">the book</a>.</p>
+<p>The start of 2022 is a good opportunity to showcase a few godot-rust games in
+development. More info is available in <a href="https://godot-rust.github.io/book/projects/games.html">the book</a>.</p>
 <p><img src="godot-rust-games.jpg" alt="godot-rust example games" /></p>
-<p>Using custom builds of the Godot engine involved quite a bit of ceremony
-in the past: manual CLI invocations, code replacement and re-wiring
-of the <code>gdnative-bindings</code> subcrate. The approach has been fundamentally
-overhauled, and is now as simple as specifying the crate feature <code>custom-godot</code>
+<p>Using custom builds of the Godot engine involved quite a bit of ceremony in the
+past: manual CLI invocations, code replacement, and re-wiring of the
+<code>gdnative-bindings</code> subcrate. The approach has been fundamentally overhauled,
+and is now as simple as specifying the crate feature <code>custom-godot</code>
 (<a href="https://github.com/godot-rust/godot-rust/pull/833">#833</a>). The library will automatically look for a <code>godot</code> executable
 in the system path (or a <code>GODOT_BIN</code> environment variable), and regenerate
 <code>api.json</code>. This makes using older or module-extended Godot versions a breeze.</p>
-<p>Latest <code>master</code> branch has now been updated to support Godot 3.4 out of the box
-(<a href="https://github.com/godot-rust/godot-rust/pull/829">#829</a>).</p>
-<p>Upcoming godot-rust version 0.10 seems to be finally on the horizon, with only
-a handful of tasks left (<a href="https://github.com/godot-rust/godot-rust/issues/842">#842</a>). A changelog since v0.9.3 is now
-available. The continous stream of small improvements here and there has led
-to a sizable list! (<a href="https://github.com/godot-rust/godot-rust/pull/845">#845</a>)</p>
+<p>The latest <code>master</code> branch has now been updated to support Godot 3.4 out of the
+box (<a href="https://github.com/godot-rust/godot-rust/pull/829">#829</a>).</p>
+<p>Upcoming godot-rust version 0.10 seems to be finally on the horizon, with only a
+handful of tasks left (<a href="https://github.com/godot-rust/godot-rust/issues/842">#842</a>). A changelog since v0.9.3 is now
+available. The continuous stream of small improvements here and there has led to
+a sizable list! (<a href="https://github.com/godot-rust/godot-rust/pull/845">#845</a>)</p>
 <h3 id="rusty-engine-4-0"><a href="https://github.com/CleanCut/rusty_engine/blob/main/CHANGELOG.md#400---2022-01-29">Rusty Engine 4.0</a>&nbsp;<a class="anchor" href="#rusty-engine-4-0" aria-hidden="true">#</a>
 </h3>
 <p><img src="rusty_engine4.png" alt="An example Rusty Engine game" />
@@ -377,11 +379,11 @@ that aims to make rendering simple and give the user full control.</p>
 <li>Environment lighting (image-based lighting)</li>
 <li>HDR environment map</li>
 <li>Headless graphics context</li>
-<li>Tangent vertex atributes</li>
+<li>Tangent vertex attributes</li>
 <li>Texture transform</li>
 <li>Cube map render targets</li>
 <li>f16 and u16 texture data types</li>
-<li>and more..</li>
+<li>and more...</li>
 </ul>
 <p>See <a href="https://twitter.com/AsgerNyman/status/1482711259673944067">this Twitter thread</a> for videos.</p>
 <h3 id="tetra"><a href="https://github.com/17cupsofcoffee/tetra">Tetra</a>&nbsp;<a class="anchor" href="#tetra" aria-hidden="true">#</a>
@@ -391,7 +393,7 @@ month, an alpha version of Tetra 0.7 was released, featuring:</p>
 <ul>
 <li>Support for a wider variety of texture formats</li>
 <li>A more powerful API for blending</li>
-<li>Lots of bug fixes, cleanups and improvements</li>
+<li>Lots of bug fixes, cleanups, and improvements</li>
 </ul>
 <p>For more details, see the <a href="https://github.com/17cupsofcoffee/tetra/blob/main/CHANGELOG.md">changelog</a>.</p>
 <p>Alongside the release of this version, it was also <a href="https://twitter.com/17cupsofcoffee/status/1479601522661109764">announced</a>
@@ -405,7 +407,7 @@ rationale for why they decided to move on from the project.</p>
 </h3>
 <p><a href="https://www.anthropicstudios.com/2022/01/13/asking-windows-nicely/"><img src="awn-header.jpg" alt="A speed limit sign labeled 45 FPS" /></a></p>
 <p><a href="https://twitter.com/masonremaley">Mason Remaley</a> published <a href="https://www.anthropicstudios.com/2022/01/13/asking-windows-nicely/">a blog post</a> covering
-Windows specific performance tweaks employed in his Rust game engine:</p>
+Windows-specific performance tweaks employed in his Rust game engine:</p>
 <blockquote>
 <p>Normally, to make your software go faster, it has to do less work. This
 usually involves improving your algorithms, skipping work the user won't see,
@@ -436,7 +438,7 @@ takeaways from this post:</p>
 hole goes.</li>
 <li>Evaluate the library ecosystem of Rust thoroughly before using it for a
 project that requires somewhat exotic functionality.</li>
-<li>Rust forces you to care about the details, regardless whether you want to.</li>
+<li>Rust forces you to care about the details, regardless of whether you want to.</li>
 </ul>
 <p>The remainder of the article goes into depth on these three points.</p>
 <h3 id="bevy-cheatbook"><a href="https://bevy-cheatbook.github.io">Bevy Cheatbook</a>&nbsp;<a class="anchor" href="#bevy-cheatbook" aria-hidden="true">#</a>
@@ -446,10 +448,12 @@ usefulness, and make maintenance easier going forward.</p>
 <ul>
 <li>Updated for Bevy 0.6</li>
 <li>Chapters reorganized to present content better and make things easy to find</li>
-<li>Linkification! All links now internally managed through separate markdown files.</li>
-<li><a href="https://bevy-cheatbook.github.io/builtins.html">New page summarizing all the useful built-in types in Bevy.</a></li>
+<li><a href="https://bevy-cheatbook.github.io/builtins.html">New page summarizing all the useful built-in types in Bevy</a></li>
 <li>Better info about <a href="https://bevy-cheatbook.github.io/platforms/wasm.html">working with WASM</a></li>
-<li>Info about <a href="https://bevy-cheatbook.github.io/setup/cross/linux-windows.html">cross-compiling for Windows from Linux</a>.</li>
+<li>Info about <a href="https://bevy-cheatbook.github.io/setup/cross/linux-windows.html">cross-compiling for Windows from Linux</a></li>
+<li>Internal refactor for easy management of links, easier to avoid old/stale links</li>
+<li>Can link everything from everywhere! All pages are now full of links!</li>
+<li>All mentions of Bevy APIs now link to <a href="https://docs.rs/bevy">docs.rs</a></li>
 </ul>
 <p>The next priority for the project is to provide at least some coverage of
 the areas of Bevy still not in the book: 2D, 3D, UI, scenes, rendering...</p>
@@ -485,6 +489,27 @@ the world using a radial context menu.</li>
 with each other.</li>
 <li>Save projects to a .ron file and reload them later.</li>
 </ul>
+<h3 id="graphite"><a href="https://graphite.rs">Graphite</a>&nbsp;<a class="anchor" href="#graphite" aria-hidden="true">#</a>
+</h3>
+<p><img src="graphite_alpha.png" alt="Graphite" /></p>
+<p><a href="https://graphite.rs">Graphite</a> (<a href="https://github.com/GraphiteEditor/Graphite">GitHub</a>,
+<a href="https://discord.graphite.rs">Discord</a>, <a href="https://twitter.com/GraphiteEditor">Twitter</a>) is an in-development
+raster and vector 2D graphics editor that is free and open source. It is
+powered by a node graph compositing engine that supercharges your layer stack,
+providing a completely non-destructive editing experience.</p>
+<p>The team is proud and excited to announce Graphite alpha, the minimum viable
+product release for a web-based vector graphics editor. After one year in
+pre-alpha development by Rust Gamedev community members, this first milestone
+of alpha is here.</p>
+<p>Graphite alpha launches <strong>Saturday, February 12</strong> together with a new
+<a href="https://graphite.rs">project website</a>.</p>
+<p>Work now commences on the second alpha milestone, focused on building the node
+graph system and vector render engine. You are invited to join the team and
+help make this exciting endeavor possible. <a href="https://discord.graphite.rs">Join the Discord</a>
+and get involved!</p>
+<p><a href="https://editor.graphite.rs">Try Graphite right now in your browser</a> and please
+<a href="graphite-repo">star the GitHub repo</a> to build momentum. Thank you for helping
+reach 1000⭐!</p>
 <h2 id="library-updates">Library Updates&nbsp;<a class="anchor" href="#library-updates" aria-hidden="true">#</a>
 </h2>
 <h3 id="leafwing-input-manager">leafwing-input-manager&nbsp;<a class="anchor" href="#leafwing-input-manager" aria-hidden="true">#</a>
@@ -504,14 +529,14 @@ and handles chords!</p>
 <p>Since the previous rafx update in this newsletter (6 months ago!), many new
 features have been introduced to improve performance and image quality. The
 main rendering pipeline has also been split into &quot;modern&quot; and &quot;basic&quot;
-pipelines. Unlike the basic pipeline which focusses on wide compatibility,
+pipelines. Unlike the basic pipeline which focuses on wide compatibility,
 the modern pipeline uses forward-clustered lighting and handles hundreds
 of shadow-casting lights. It is targeting compute shaders and will be adding
 bindless and GPU-driven rendering soon.</p>
-<p>Since the last update, the modern pipeline adds GPU-accelierated light binning,
+<p>Since the last update, the modern pipeline adds GPU-accelerated light binning,
 SSAO, shadow map atlasing/caching, TAA with sharpening, and auto-exposure/HDR.
 In addition, both modern and basic pipelines now support transparency. A
-<a href="rafx-youtube-video">video demonstrating TAA</a> (temporal anti-aliasing) is
+<a href="https://www.youtube.com/watch?v=iWYpX7RGUSA">video demonstrating TAA</a> (temporal anti-aliasing) is
 available on youtube.</p>
 <p>With these performance improvements, <code>rafx</code> is now able to render challenging
 scenes with photorealistic style at 60FPS/1440p on modern, mid-range GPUs.</p>
@@ -521,7 +546,7 @@ scenes with photorealistic style at 60FPS/1440p on modern, mid-range GPUs.</p>
 <p><a href="https://gitlab.com/Friz64/erupt-bootstrap">erupt-bootstrap</a> by <a href="https://blog.friz64.de/about">@Friz64</a> is a Vulkan Bootstrapping library for Rust.</p>
 <p>When starting a new Vulkan project, there's always the struggle of writing a
 whole bunch of boilerplate code in order to, e.g., get your first triangle on
-the screen. You have to create an <code>VkInstance</code>, with the validation layers
+the screen. You have to create a <code>VkInstance</code>, with the validation layers
 set up and working for development. Then select the best suited
 <code>VkPhysicalDevice</code> for your app's requirements. Use that to create a <code>VkDevice</code>
 with the appropriate queue families chosen. Oh, and after that, you need
@@ -531,24 +556,24 @@ abstract over all of this to get you up and running in no time. It's inspired by
 the excellent <a href="https://github.com/charles-lunarg/vk-bootstrap">vk-bootstrap</a> library for C++.</p>
 <h3 id="edict"><a href="https://github.com/zakarumych/edict">Edict</a>&nbsp;<a class="anchor" href="#edict" aria-hidden="true">#</a>
 </h3>
-<p>New archetypes based ECS implementation by <a href="https://github.com/zakarumych">@zakarumych</a>.</p>
+<p><a href="https://github.com/zakarumych/edict">Edict</a> is a new archetype-based ECS implementation by <a href="https://github.com/zakarumych">@zakarumych</a>.</p>
 <p>The novel feature of <a href="https://github.com/zakarumych/edict">Edict</a> is entity ownership implemented via reference counting.
 This optional feature allows creating owned kind of <code>Entity</code> &quot;reference&quot;,
-that ensures entity is alive and despawns it on drop.
+that ensures the entity is alive and despawns it on drop.
 Storing owning <code>Entity</code> in the component of another entity
 creates ownership relation between those entities.
 Even though <code>Entity</code> is an owning reference,
 components of the entity are can be queried from <code>World</code> as usual.
 Shared ownership is also available.</p>
 <p>Optimized for both high density <code>World</code>s with thousands of entities
-and also for <code>World</code>s with lower number of entities spread among many archetypes.
-<a href="https://github.com/zakarumych/edict">Edict</a> is aimed for wide range of game genres and use cases outside of games.</p>
+and also for <code>World</code>s with a lower number of entities spread among many archetypes.
+<a href="https://github.com/zakarumych/edict">Edict</a> is aimed at a wide range of game genres and use cases outside of games.</p>
 <p>Built-in change detection with epochs allows systems to query for components
-that were updated since last run of that query,
+that were updated since the last run of that query,
 or since any other epoch as defined by <code>Tracks</code> argument.
-This opens possibility to have multiple POV on changes even in single system.
-For example server-side netcode can track changes individually
-for each client and query for changes since last ACK.
+This opens the possibility to have multiple POV on changes even in a single system.
+For example, server-side netcode can track changes individually
+for each client and query for changes since the last ACK.
 <a href="https://github.com/zakarumych/edict">Edict</a> optimizes iteration significantly when entities
 with modified components are queried.</p>
 <p>Although ECS abbreviation implies, <a href="https://github.com/zakarumych/edict">Edict</a> does not come
@@ -557,14 +582,14 @@ We can call it ECQ (Entity-Component-Query) as an alternative to ECS.</p>
 <p><a href="https://github.com/zakarumych/edict">Edict</a> is added to <a href="https://github.com/rust-gamedev/ecs_bench_suite">ecs_bench_suite</a>
 so anyone can compare performance in some trivial examples with other ECS.</p>
 <p>Development focus for February is making more public API, including unsafe parts,
-to allow writing custom queries, implement schedulers with parallel execution etc.</p>
+to allow writing custom queries, implement schedulers with parallel execution, etc.</p>
 <h3 id="bevy-backroll-v0-3"><a href="https://github.com/HouraiTeahouse/backroll-rs">bevy_backroll v0.3</a>&nbsp;<a class="anchor" href="#bevy-backroll-v0-3" aria-hidden="true">#</a>
 </h3>
 <p><a href="https://github.com/HouraiTeahouse/backroll-rs">Backroll</a> is a 100% type-safe native Rust implementation of the
 <a href="https://www.ggpo.net/">GGPO</a> rollback netcode library. The core library has gone through
-superfical updates, but the <a href="https://crates.io/bevy-backroll">Bevy plugin</a> has been
-massively overhauled. This update signfigantly improves the ergonomics of setting
-up rollback netcode for your game (no more ugly turbofishes! no more generic type
+superficial updates, but the <a href="https://crates.io/bevy-backroll">Bevy plugin</a> has been
+massively overhauled. This update significantly improves the ergonomics of setting
+up rollback netcode for your game (no more ugly turbofishes! No more generic type
 parameter config type!), provides an automatic way of saving and loading Bevy
 components and resources, and fully parallelizes the saving and loading of game
 state when a rollback occurs.</p>
@@ -652,8 +677,8 @@ useful information -->
 </h2>
 <!-- Links to "good first issue"-labels or direct links to specific tasks -->
 <ul>
-<li><a href="https://github.com/GraphiteEditor/Graphite/issues/202">Graphite is looking for contributors</a> to help reach
-the 0.1 Alpha release.</li>
+<li><a href="https://github.com/GraphiteEditor/Graphite/issues/202">Graphite is looking for contributors</a> to help build the
+new node graph and 2D rendering systems.</li>
 <li><a href="https://github.com/rust-windowing/winit/issues?q=is%3Aopen+is%3Aissue+label%3A%22difficulty%3A+easy%22">winit's &quot;difficulty: easy&quot; issues</a>.</li>
 <li><a href="https://github.com/HouraiTeahouse/backroll-rs/issues">Backroll-rs, a new networking library</a>.</li>
 <li><a href="https://github.com/search?q=user:EmbarkStudios+state:open">Embark's open issues</a> (<a href="https://embark.rs">embark.rs</a>).</li>
