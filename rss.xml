@@ -239,7 +239,7 @@ by switching over to an actor pattern approach. This method allowed the server
 to be refactored to be more modular and cleaner.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;godot-rust-to-android-without-android-studio&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;coffeecodechem.com&#x2F;2022&#x2F;02&#x2F;exporting-godot-rust-android-apk-windows&#x2F;&quot;&gt;Godot-Rust to Android without Android Studio&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#godot-rust-to-android-without-android-studio&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
-&lt;p&gt;&lt;img src=&quot;godot-rust-android-via-windows.png&quot; alt=&quot;working godot-rust on an android phone&quot; &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;godot-rust-android-via-windows.jpg&quot; alt=&quot;working godot-rust on an android phone&quot; &#x2F;&gt;
 &lt;em&gt;Proof of concept Godot app running on Android&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;coffeecodechem&quot;&gt;@coffeecodechem&lt;&#x2F;a&gt; published a &lt;a href=&quot;https:&#x2F;&#x2F;coffeecodechem.com&#x2F;2022&#x2F;02&#x2F;exporting-godot-rust-android-apk-windows&#x2F;&quot;&gt;blog post&lt;&#x2F;a&gt; on how to
 export godot-rust as an Android APK on Windows without using Android Studio. It
