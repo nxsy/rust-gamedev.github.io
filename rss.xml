@@ -405,7 +405,7 @@ checking the &lt;a href=&quot;https:&#x2F;&#x2F;nazariglez.github.io&#x2F;notan-
 &lt;p&gt;&lt;img src=&quot;dynamic-assets.png&quot; alt=&quot;Dynamic assets&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;NiklasEi&#x2F;bevy_asset_loader&quot;&gt;bevy_asset_loader&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;nikl_me&quot;&gt;@nikl_me&lt;&#x2F;a&gt; is a &lt;a href=&quot;https:&#x2F;&#x2F;bevyengine.org&quot;&gt;Bevy&lt;&#x2F;a&gt; plugin that aims to reduce
 boilerplate for asset handling in Bevy apps.&lt;&#x2F;p&gt;
-&lt;p&gt;Last month saw the release of version &lt;code&gt;0.6&lt;&#x2F;code&gt; which added support for loading
+&lt;p&gt;Last month saw the release of version &lt;code&gt;0.9&lt;&#x2F;code&gt; which added support for loading
 asset configurations from &lt;code&gt;.ron&lt;&#x2F;code&gt; files like the one shown above. This allows for
 resolving asset configurations like their file path or sprite sheet dimensions
 at run time. The feature is called &amp;quot;dynamic assets&amp;quot; and enables use cases like
